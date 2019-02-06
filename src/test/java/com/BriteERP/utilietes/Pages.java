@@ -1,9 +1,6 @@
 package com.BriteERP.utilietes;
 
-import com.BriteERP.pages.ActivityTypesPage;
-import com.BriteERP.pages.CRMpage;
-import com.BriteERP.pages.LoginPage;
-import com.BriteERP.pages.PipelinePage;
+import com.BriteERP.pages.*;
 
 public class Pages {
 
@@ -11,6 +8,8 @@ public class Pages {
     private CRMpage crmPage;
     private ActivityTypesPage activityTypesPage;
     private PipelinePage pipelinePage;
+    private ActivitiesPage activitiesPage;
+
 
     public  ActivityTypesPage activityTypesPage() {
         if (activityTypesPage == null){
@@ -43,6 +42,13 @@ public class Pages {
         return pipelinePage;
 
     }
+    public  ActivitiesPage activitiesPage() {
+        if (activitiesPage == null){
+            activitiesPage = new ActivitiesPage();
 
+        }
+        return activitiesPage;
+
+    }
 
 }
