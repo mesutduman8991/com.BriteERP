@@ -38,6 +38,16 @@ public class ActivitiesTest extends TestBase {
         extentLogger.info("click on GROUP_BY");
         pages.activitiesPage().selectElement.click();
 
+        extentLogger.info("click on GROUP_BY");
+        pages.activitiesPage().selectElement.click();
+
+
+        extentLogger.info("Click on Favorites");
+        pages.activitiesPage().favoritesClick.click();
+        Assert.assertTrue(pages.activitiesPage().favoritesClick.isDisplayed());
+        System.out.println(pages.activitiesPage().favoritesClick.isDisplayed());
+
+
 
         extentLogger.info("verifying if ACTIVITIES is displayed");
         Assert.assertTrue(pages.activitiesPage().activities.isDisplayed());
