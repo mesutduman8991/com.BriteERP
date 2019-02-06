@@ -2,6 +2,7 @@ package com.BriteERP.utilietes;
 
 import com.BriteERP.pages.*;
 
+
 public class Pages {
 
     private LoginPage loginPage;
@@ -9,6 +10,8 @@ public class Pages {
     private ActivityTypesPage activityTypesPage;
     private PipelinePage pipelinePage;
     private ActivitiesPage activitiesPage;
+
+    private Quotations quotationsPage;
 
 
     public  ActivityTypesPage activityTypesPage() {
@@ -29,10 +32,17 @@ public class Pages {
 
     public CRMpage crmPage(){
         if(crmPage == null){
+
             crmPage = new CRMpage();
         }
         return crmPage;
+    }
 
+    public Quotations quotationsPage(){
+        if(quotationsPage == null){
+           quotationsPage = new Quotations();
+        }
+        return quotationsPage;
     }
 
     public PipelinePage pipelinePage(){
@@ -50,5 +60,7 @@ public class Pages {
         return activitiesPage;
 
     }
+
+
 
 }
