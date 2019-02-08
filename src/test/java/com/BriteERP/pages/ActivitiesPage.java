@@ -23,5 +23,7 @@ public class ActivitiesPage {
     public WebElement addCustomClass;
 
 
+    @FindBy(xpath = "/html/body/div[1]/div[2]/div[1]/div[3]/div[1]/div[3]/button")
+    public WebElement favoritesClick;
 
 }
