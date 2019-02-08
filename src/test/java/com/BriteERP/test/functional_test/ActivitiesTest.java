@@ -28,8 +28,8 @@ public class ActivitiesTest extends TestBase {
         wait.until(ExpectedConditions.elementToBeClickable(pages.crmPage().crmButtn)).click();
 
         extentLogger.info("click on ACTIVITIES");
-        wait.until(ExpectedConditions.visibilityOf(pages.activitiesPage().activities));
-        pages.activitiesPage().activities.click();
+        wait.until(ExpectedConditions.visibilityOf(pages.crmPage().activities));
+        pages.crmPage().activities.click();
 
         extentLogger.info("click on SEARCH_BUTTON");
         pages.activitiesPage().searchButton.click();
@@ -40,7 +40,7 @@ public class ActivitiesTest extends TestBase {
 
 
         extentLogger.info("verifying if ACTIVITIES is displayed");
-        Assert.assertTrue(pages.activitiesPage().activities.isDisplayed());
+        Assert.assertTrue(pages.crmPage().activities.isDisplayed());
 
         extentLogger.info("verifying if SEARCH_BUTTON is displayed");
         Assert.assertTrue(pages.activitiesPage().searchButton.isDisplayed());
@@ -56,5 +56,10 @@ public class ActivitiesTest extends TestBase {
 
 
     }
+
+
+
+
+
 
 }
