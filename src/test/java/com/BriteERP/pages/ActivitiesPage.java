@@ -8,8 +8,9 @@ import org.openqa.selenium.support.PageFactory;
 
 
 public class ActivitiesPage {
-    public  ActivitiesPage(){
-        PageFactory.initElements(Driver.getDriver(),this);
+
+    public ActivitiesPage() {
+        PageFactory.initElements(Driver.getDriver(), this);
     }
 
     @FindBy(xpath = "/html/body/div[1]/div[1]/div[1]/div[5]/ul[2]/li[2]/a/span")
@@ -19,13 +20,16 @@ public class ActivitiesPage {
     public WebElement searchButton;
 
     @FindBy(xpath = "/html/body/div[1]/div[2]/div[1]/div[3]/div[1]/div[2]/button")
-    public  WebElement selectElement;
-
-    @FindBy(xpath = "/html/body/div[1]/div[2]/div[1]/div[3]/div[1]/div[2]/ul/li[8]/a")
-    public WebElement addCustomClass;
+    public WebElement groupClick;
 
 
     @FindBy(xpath = "/html/body/div[1]/div[2]/div[1]/div[3]/div[1]/div[3]/button")
     public WebElement favoritesClick;
+
+    @FindBy(xpath = "/html/body/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/button")
+    public WebElement filtersClick;
+
+    @FindBy(xpath = "/html/body/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/button")
+    public WebElement measuresClick;
 
 }
