@@ -1,9 +1,7 @@
 package com.BriteERP.utilietes;
 
-import com.BriteERP.pages.ActivityTypesPage;
-import com.BriteERP.pages.CRMpage;
-import com.BriteERP.pages.LoginPage;
-import com.BriteERP.pages.PipelinePage;
+import com.BriteERP.pages.*;
+
 
 public class Pages {
 
@@ -11,6 +9,9 @@ public class Pages {
     private CRMpage crmPage;
     private ActivityTypesPage activityTypesPage;
     private PipelinePage pipelinePage;
+    private ActivitiesPage activitiesPage;
+    private Quotations quotationsPage;
+    private Leads_And_OpportunitiesPage leads_and_opportunitiesPage;
 
     public  ActivityTypesPage activityTypesPage() {
         if (activityTypesPage == null){
@@ -30,10 +31,17 @@ public class Pages {
 
     public CRMpage crmPage(){
         if(crmPage == null){
+
             crmPage = new CRMpage();
         }
         return crmPage;
+    }
 
+    public Quotations quotationsPage(){
+        if(quotationsPage == null){
+           quotationsPage = new Quotations();
+        }
+        return quotationsPage;
     }
 
     public PipelinePage pipelinePage(){
@@ -42,6 +50,20 @@ public class Pages {
         }
         return pipelinePage;
 
+    }
+    public  ActivitiesPage activitiesPage() {
+        if (activitiesPage == null){
+            activitiesPage = new ActivitiesPage();
+
+        }
+        return activitiesPage;
+
+    }
+    public Leads_And_OpportunitiesPage leads_and_opportunitiesPage(){
+        if (leads_and_opportunitiesPage == null){
+            leads_and_opportunitiesPage = new Leads_And_OpportunitiesPage();
+        }
+        return leads_and_opportunitiesPage;
     }
 
 
