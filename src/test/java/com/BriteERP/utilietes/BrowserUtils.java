@@ -276,5 +276,22 @@ public class BrowserUtils {
         }
     }
 
+    /**
+     * it is checking for an element clickable or not
+     * @param element
+     * @return
+     */
+    public static boolean isClickable(WebElement element) {
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
+        try {
+            wait.until(ExpectedConditions.elementToBeClickable(element));
+
+        }catch(Exception e){
+            return false;
+        }
+        return true;
+
+    }
+
 }
 
