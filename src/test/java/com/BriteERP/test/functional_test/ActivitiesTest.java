@@ -28,12 +28,12 @@ public class ActivitiesTest extends TestBase {
         wait.until(ExpectedConditions.elementToBeClickable(pages.crmPage().crmButtn)).click();
 
         extentLogger.info("click on ACTIVITIES");
-        wait.until(ExpectedConditions.visibilityOf(pages.activitiesPage().activities));
-        pages.activitiesPage().activities.click();
+        wait.until(ExpectedConditions.visibilityOf(pages.crmPage().activities));
+        pages.crmPage().activities.click();
 
         extentLogger.info("verifying if ACTIVITIES is displayed");
-        Assert.assertTrue(pages.activitiesPage().activities.isDisplayed());
-        System.out.println(pages.activitiesPage().activities.isDisplayed());
+        Assert.assertTrue(pages.crmPage().activities.isDisplayed());
+        System.out.println(pages.crmPage().activities.isDisplayed());
 
 
 
@@ -53,8 +53,8 @@ public class ActivitiesTest extends TestBase {
         wait.until(ExpectedConditions.elementToBeClickable(pages.crmPage().crmButtn)).click();
 
         extentLogger.info("click on ACTIVITIES");
-        wait.until(ExpectedConditions.visibilityOf(pages.activitiesPage().activities));
-        pages.activitiesPage().activities.click();
+        wait.until(ExpectedConditions.visibilityOf(pages.crmPage().activities));
+        pages.crmPage().activities.click();
 
 
         extentLogger.info("Click on Search Button");
@@ -65,7 +65,7 @@ public class ActivitiesTest extends TestBase {
     }
 
     @Test
-    public void measures() throws InterruptedException {
+    public void measures()  {
         extentLogger = report.createTest("Measures Button Test");
 
         extentLogger.info("Login to website");
@@ -76,13 +76,13 @@ public class ActivitiesTest extends TestBase {
         wait.until(ExpectedConditions.elementToBeClickable(pages.crmPage().crmButtn)).click();
 
         extentLogger.info("click on ACTIVITIES");
-        wait.until(ExpectedConditions.visibilityOf(pages.activitiesPage().activities));
-        pages.activitiesPage().activities.click();
+        wait.until(ExpectedConditions.visibilityOf(pages.crmPage().activities));
+        pages.crmPage().activities.click();
 
 
-        Thread.sleep(15000);
+
         extentLogger.info("click on Measures button");
-        pages.activitiesPage().measuresClick.click();
+        wait.until(ExpectedConditions.elementToBeClickable(pages.activitiesPage().measuresClick)).click();
 
 
         extentLogger.info("verifying that if Measures button is displayed");
@@ -93,6 +93,8 @@ public class ActivitiesTest extends TestBase {
 
 
     }
+
+
 
     @Test()
     public void filters() {
@@ -106,8 +108,8 @@ public class ActivitiesTest extends TestBase {
         wait.until(ExpectedConditions.elementToBeClickable(pages.crmPage().crmButtn)).click();
 
         extentLogger.info("click on ACTIVITIES");
-        wait.until(ExpectedConditions.visibilityOf(pages.activitiesPage().activities));
-        pages.activitiesPage().activities.click();
+        wait.until(ExpectedConditions.visibilityOf(pages.crmPage().activities));
+        pages.crmPage().activities.click();
 
         extentLogger.info("click on SEARCH_BUTTON");
         pages.activitiesPage().searchButton.click();
@@ -125,7 +127,7 @@ public class ActivitiesTest extends TestBase {
     }
 
     @Test
-    public void group_By() throws InterruptedException {
+    public void group_By()  {
         extentLogger = report.createTest("Group_By Button Test");
 
 
@@ -137,13 +139,13 @@ public class ActivitiesTest extends TestBase {
         wait.until(ExpectedConditions.elementToBeClickable(pages.crmPage().crmButtn)).click();
 
         extentLogger.info("click on ACTIVITIES");
-        wait.until(ExpectedConditions.visibilityOf(pages.activitiesPage().activities));
-        pages.activitiesPage().activities.click();
+        wait.until(ExpectedConditions.visibilityOf(pages.crmPage().activities));
+        pages.crmPage().activities.click();
 
         extentLogger.info("click on SEARCH_BUTTON");
-        pages.activitiesPage().searchButton.click();
+        wait.until(ExpectedConditions.elementToBeClickable(pages.activitiesPage().searchButton)).click();
 
-        Thread.sleep(15000);
+
         extentLogger.info("click on GROUP_BY");
         pages.activitiesPage().groupClick.click();
 
@@ -161,7 +163,7 @@ public class ActivitiesTest extends TestBase {
     }
 
     @Test
-    public void favorites() throws InterruptedException {
+    public void favorites() {
         extentLogger = report.createTest("Favorites Button Test");
 
         extentLogger.info("Login to website");
@@ -172,14 +174,14 @@ public class ActivitiesTest extends TestBase {
         wait.until(ExpectedConditions.elementToBeClickable(pages.crmPage().crmButtn)).click();
 
         extentLogger.info("click on ACTIVITIES");
-        wait.until(ExpectedConditions.visibilityOf(pages.activitiesPage().activities));
-        pages.activitiesPage().activities.click();
+        wait.until(ExpectedConditions.visibilityOf(pages.crmPage().activities));
+        pages.crmPage().activities.click();
 
         extentLogger.info("click on SEARCH_BUTTON");
-        pages.activitiesPage().searchButton.click();
+        wait.until(ExpectedConditions.elementToBeClickable(pages.activitiesPage().searchButton)).click();
 
 
-        Thread.sleep(15000);
+
         extentLogger.info("Click on Favorites");
         pages.activitiesPage().favoritesClick.click();
 
@@ -190,6 +192,10 @@ public class ActivitiesTest extends TestBase {
         Driver.closeDriver();
 
     }
+
+
+
+
 
 
 }
