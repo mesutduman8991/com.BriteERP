@@ -10,6 +10,7 @@ public class Pages {
     private ActivityTypesPage activityTypesPage;
     private PipelinePage pipelinePage;
     private ActivitiesPage activitiesPage;
+    private SalesChannelsPage salesChannelsPage;
 
     private Quotations quotationsPage;
 
@@ -59,6 +60,13 @@ public class Pages {
         }
         return activitiesPage;
 
+    }
+
+    public SalesChannelsPage salesChannelsPage(){
+        if(salesChannelsPage==null){
+            salesChannelsPage= new SalesChannelsPage();
+        }
+        return salesChannelsPage;
     }
 
 

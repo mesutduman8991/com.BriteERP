@@ -10,4 +10,5 @@ public class ApplicationConstants {
     public static final String PiplinePage_Title="Pipeline Analysis";
     public static final String Pie_Chart_Title="Pipeline Analysis";
     public static final String Line_Chart_Title="Undefined";
+
 }

@@ -9,6 +9,7 @@ public class CRMpage {
 
 
     public CRMpage(){
+
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
@@ -18,7 +19,5 @@ public class CRMpage {
     @FindBy(xpath = "//a[@data-menu=\"268\"]/span")
     public WebElement activityTypes;
 
-
-
-
 }
+
