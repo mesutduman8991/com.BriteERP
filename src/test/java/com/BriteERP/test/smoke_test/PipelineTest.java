@@ -24,10 +24,10 @@ public class PipelineTest extends TestBase {
         extentLogger.info("Clicking on CRM module");
         pages.crmPage().crmButtn.click();
         extentLogger.info("Clicking on Pipeline Page");
-        pages.pipelinePage().Pipline_button.click();
+        pages.pipelinePage().pipline_button.click();
         extentLogger.info("Verifying Pipline page title");
-        BrowserUtils.wait(5);
-        String actual = pages.pipelinePage().PiplinePage_Title.getText();
+        BrowserUtils.wait(10);
+        String actual = pages.pipelinePage().piplinePage_Title.getText();
         Assert.assertEquals(actual, ApplicationConstants.PiplinePage_Title);
 
 

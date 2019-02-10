@@ -10,10 +10,11 @@ public class Pages {
     private ActivityTypesPage activityTypesPage;
     private PipelinePage pipelinePage;
     private ActivitiesPage activitiesPage;
+
     private SalesChannelsPage salesChannelsPage;
 
     private Quotations quotationsPage;
-
+    private Leads_And_OpportunitiesPage leads_and_opportunitiesPage;
 
     public  ActivityTypesPage activityTypesPage() {
         if (activityTypesPage == null){
@@ -69,6 +70,11 @@ public class Pages {
         return salesChannelsPage;
     }
 
-
+    public Leads_And_OpportunitiesPage leads_and_opportunitiesPage(){
+        if (leads_and_opportunitiesPage == null){
+            leads_and_opportunitiesPage = new Leads_And_OpportunitiesPage();
+        }
+        return leads_and_opportunitiesPage;
+    }
 
 }
