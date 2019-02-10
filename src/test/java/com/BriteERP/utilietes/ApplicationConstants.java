@@ -10,4 +10,13 @@ public class ApplicationConstants {
     public static final String PiplinePage_Title="Pipeline Analysis";
     public static final String Pie_Chart_Title="Pipeline Analysis";
     public static final String Line_Chart_Title="Undefined";
+
+    public static final String DELAY2ASSIGN="Delay to Assign";
+    public static final String DELAY2CLOSE="Delay to Close";
+    public static final String OVERPASSEDDEADLIJNE="Overpassed Deadline";
+    public static final String OFACTIVITIES="# of Activities";
+    public static final String PROBABLITY="Probability";
+    public static final String TOTALREVENUE="Total Revenue";
+    public static final String COUNT="Count";
+
 }

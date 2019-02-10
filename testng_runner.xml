@@ -1,10 +1,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="BriteERP" verbose="1" parallel="tests" thread-count="2">
+<suite name="BriteERP" verbose="1">
 
-    <test name="BriteERP Login Tests">
-        <classes>
-           <class name="com.BriteERP.test.smoke_test.LoginPageTest"/>
-        </classes>
+    <test name="BriteERP Smoke Test">
+        <packages>
+            <package name="com.BriteERP.test.smoke_test"/>
+        </packages>
     </test>
 
 

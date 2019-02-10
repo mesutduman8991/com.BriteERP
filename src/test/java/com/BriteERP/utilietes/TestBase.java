@@ -23,7 +23,7 @@ public abstract class TestBase extends BrowserUtils{
     @BeforeMethod(alwaysRun = true)
     public void setupMethod(@Optional String browser) {
         driver = Driver.getDriver(browser);
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(45, TimeUnit.SECONDS);
         driver.get(ConfigurationReader.getProperty("url"));
         pages = new Pages();
     }
@@ -39,8 +39,9 @@ public abstract class TestBase extends BrowserUtils{
 
         } else if (result.getStatus() == ITestResult.SKIP) {
             extentLogger.skip("Test Case Skipped: " + result.getName());
+
+            Driver.closeDriver();
         }
-       Driver.closeDriver();
     }
 
     @BeforeTest(alwaysRun = true)

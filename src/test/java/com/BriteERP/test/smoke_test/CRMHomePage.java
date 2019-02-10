@@ -4,14 +4,17 @@ import com.BriteERP.pages.CRMpage;
 import com.BriteERP.pages.LoginPage;
 import com.BriteERP.utilietes.ApplicationConstants;
 import com.BriteERP.utilietes.TestBase;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
 
 public class CRMHomePage extends TestBase {
 
+
+
     @Test(groups="smoke")
-    public void CRMHomePage(){
+    public void CRMHomePage2(){
         LoginPage loginPage= new LoginPage();
         CRMpage crMpage= new CRMpage();
         extentLogger = report.createTest("Positive CRM home page test");
@@ -33,5 +36,8 @@ public class CRMHomePage extends TestBase {
 
 
     }
+
+
+
 
 }

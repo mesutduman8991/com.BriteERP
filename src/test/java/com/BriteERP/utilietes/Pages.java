@@ -11,8 +11,10 @@ public class Pages {
     private PipelinePage pipelinePage;
     private ActivitiesPage activitiesPage;
 
-    private Quotations quotationsPage;
+    private SalesChannelsPage salesChannelsPage;
 
+    private Quotations quotationsPage;
+    private Leads_And_OpportunitiesPage leads_and_opportunitiesPage;
 
     public  ActivityTypesPage activityTypesPage() {
         if (activityTypesPage == null){
@@ -61,6 +63,18 @@ public class Pages {
 
     }
 
+    public SalesChannelsPage salesChannelsPage(){
+        if(salesChannelsPage==null){
+            salesChannelsPage= new SalesChannelsPage();
+        }
+        return salesChannelsPage;
+    }
 
+    public Leads_And_OpportunitiesPage leads_and_opportunitiesPage(){
+        if (leads_and_opportunitiesPage == null){
+            leads_and_opportunitiesPage = new Leads_And_OpportunitiesPage();
+        }
+        return leads_and_opportunitiesPage;
+    }
 
 }
